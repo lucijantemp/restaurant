@@ -1,1 +1,3 @@
-alert("works perfectly")
+import './style.css';
+
+alert("works perfectly");
