@@ -1,0 +1,24 @@
+/* COLORS */
+$honeyLight: #ffde73;
+$honeyDark: #c16a08;
+$black: #000000;
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+main {
+    background-image: url('../images/background.png');
+    background-repeat: repeat-y;
+    min-height: 100vh;
+}
+
+button:hover {
+    cursor: pointer;
+}
+
+@import "header";
+@import "main";

@@ -1,3 +1,1 @@
-import './style.css';
-
-alert("works perfectly");
+import './styles/style.scss';
