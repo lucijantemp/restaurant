@@ -1,3 +1,12 @@
+/* images */
+import HoneyTea from '../images/honey-tea.jpeg'
+import BearyTea from '../images/beary-tea.jpg'
+import Toast from '../images/toast.jpg'
+import Fruit from '../images/fruit.jpg'
+import Pancakes from '../images/pancakes.jpg'
+import Veggie from '../images/veggie.jpg'
+
+
 export const load = (() => {
     
     const contentDiv = document.querySelector('#content');
@@ -86,7 +95,154 @@ export const load = (() => {
         sectionContainerLocation.appendChild(locationText)
     }
 
-    const showMenu = () => {}
+    const showMenu = () => {
+        const mainContainer = document.querySelector('.main-container')
+
+        /* title */
+        const mainContainerTitle = document.createElement('h1')
+        mainContainerTitle.classList.add('main-container-title')
+        mainContainerTitle.innerHTML = 'Menu'
+        mainContainer.appendChild(mainContainerTitle)
+
+        /* subtitle */
+        const subtitleBeverages = document.createElement('h2')
+        subtitleBeverages.classList.add('main-container-subtitle')
+        subtitleBeverages.innerHTML = 'Beverages'
+        mainContainer.appendChild(subtitleBeverages)
+
+        /* honey tea box */
+        const sectionContainerHoney = document.createElement('div')
+        sectionContainerHoney.classList.add('main-container-section')
+        mainContainer.appendChild(sectionContainerHoney)
+
+        const honeyTitle = document.createElement('h3')
+        honeyTitle.classList.add('section-title')
+        honeyTitle.innerHTML = 'Honey tea'
+        sectionContainerHoney.appendChild(honeyTitle)
+
+        const honeyText = document.createElement('p')
+        honeyText.classList.add('section-text')
+        honeyText.innerHTML = "A warm, sweet tea made with the highest quality honey and a bit of lemon to start your day off right!"
+        sectionContainerHoney.appendChild(honeyText)
+
+        const honeyImage = document.createElement('img')
+        honeyImage.classList.add('section-image')
+        honeyImage.src = HoneyTea
+        sectionContainerHoney.appendChild(honeyImage)
+
+        /* beary tea box */
+        const sectionContainerBeary = document.createElement('div')
+        sectionContainerBeary.classList.add('main-container-section')
+        mainContainer.appendChild(sectionContainerBeary)
+
+        const bearyTitle = document.createElement('h3')
+        bearyTitle.classList.add('section-title')
+        bearyTitle.innerHTML = 'Beary tea'
+        sectionContainerBeary.appendChild(bearyTitle)
+
+        const bearyText = document.createElement('p')
+        bearyText.classList.add('section-text')
+        bearyText.innerHTML = "A comforting, almost filling, tea that is infused with the flavors of several kinds of berries. Best served cold, but can be served hot on request."
+        sectionContainerBeary.appendChild(bearyText)
+
+        const bearyImage = document.createElement('img')
+        bearyImage.classList.add('section-image')
+        bearyImage.src = BearyTea
+        sectionContainerBeary.appendChild(bearyImage)
+
+        /* subtitle */
+        const subtitleSides = document.createElement('h2')
+        subtitleSides.classList.add('main-container-subtitle')
+        subtitleSides.innerHTML = 'Sides'
+        mainContainer.appendChild(subtitleSides)
+
+        /* toast box */
+        const sectionContainerToast = document.createElement('div')
+        sectionContainerToast.classList.add('main-container-section')
+        mainContainer.appendChild(sectionContainerToast)
+
+        const toastTitle = document.createElement('h3')
+        toastTitle.classList.add('section-title')
+        toastTitle.innerHTML = 'Toast and Jam'
+        sectionContainerToast.appendChild(toastTitle)
+
+        const toastText = document.createElement('p')
+        toastText.classList.add('section-text')
+        toastText.innerHTML = "A slice of toast, your choice of bread, and our homemade blackberry or raspberry jam."
+        sectionContainerToast.appendChild(toastText)
+
+        const toastImage = document.createElement('img')
+        toastImage.classList.add('section-image')
+        toastImage.src = Toast
+        sectionContainerToast.appendChild(toastImage)
+
+        /* fruit box */
+        const sectionContainerFruit = document.createElement('div')
+        sectionContainerFruit.classList.add('main-container-section')
+        mainContainer.appendChild(sectionContainerFruit)
+
+        const fruitTitle = document.createElement('h3')
+        fruitTitle.classList.add('section-title')
+        fruitTitle.innerHTML = 'Fresh Fruit'
+        sectionContainerFruit.appendChild(fruitTitle)
+
+        const fruitText = document.createElement('p')
+        fruitText.classList.add('section-text')
+        fruitText.innerHTML = "A small bowl of fresh fruit, whatever we find at the market for the day."
+        sectionContainerFruit.appendChild(fruitText)
+
+        const fruitImage = document.createElement('img')
+        fruitImage.classList.add('section-image')
+        fruitImage.src = Fruit
+        sectionContainerFruit.appendChild(fruitImage)
+
+        /* subtitle */
+        const subtitleMain = document.createElement('h2')
+        subtitleMain.classList.add('main-container-subtitle')
+        subtitleMain.innerHTML = 'Main Dishes'
+        mainContainer.appendChild(subtitleMain)
+
+        /* pancakes box */
+        const sectionContainerPancakes = document.createElement('div')
+        sectionContainerPancakes.classList.add('main-container-section')
+        mainContainer.appendChild(sectionContainerPancakes)
+
+        const pancakesTitle = document.createElement('h3')
+        pancakesTitle.classList.add('section-title')
+        pancakesTitle.innerHTML = 'Pancakes'
+        sectionContainerPancakes.appendChild(pancakesTitle)
+
+        const pancakesText = document.createElement('p')
+        pancakesText.classList.add('section-text')
+        pancakesText.innerHTML = "A stack of homemade buttermilk pancakes, served with our locally sourced maple syrup."
+        sectionContainerPancakes.appendChild(pancakesText)
+
+        const pancakesImage = document.createElement('img')
+        pancakesImage.classList.add('section-image')
+        pancakesImage.src = Pancakes
+        sectionContainerPancakes.appendChild(pancakesImage)
+
+        /* pancakes box */
+        const sectionContainerVeggie = document.createElement('div')
+        sectionContainerVeggie.classList.add('main-container-section')
+        mainContainer.appendChild(sectionContainerVeggie)
+
+        const veggieTitle = document.createElement('h3')
+        veggieTitle.classList.add('section-title')
+        veggieTitle.innerHTML = 'Beary Veggie Sandwich'
+        sectionContainerVeggie.appendChild(veggieTitle)
+
+        const veggieText = document.createElement('p')
+        veggieText.classList.add('section-text')
+        veggieText.innerHTML = "Do you like vegetables? Then this is the sandwich for you! Stuffed full of a variety of fresh produce, it will fill you up."
+        sectionContainerVeggie.appendChild(veggieText)
+
+        const veggieImage = document.createElement('img')
+        veggieImage.classList.add('section-image')
+        veggieImage.src = Veggie
+        sectionContainerVeggie.appendChild(veggieImage)
+    }
+
     const showContact = () => {}
 
     const wipeContent = () => {
