@@ -1,4 +1,7 @@
 import './styles/style.scss';
-import { pageLoad } from './scripts/page-load'
+import { load } from './scripts/load.js'
+import { events } from './scripts/events.js'
 
-pageLoad.loadWelcome()
+
+load.loadWelcome()
+events.init()

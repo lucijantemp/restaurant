@@ -10,7 +10,7 @@ main {
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-color: #ffde73;
+    background-color: $honeyLight;
 }
 
 .main-container-title {
@@ -18,7 +18,7 @@ main {
     font-size: 2.5rem;
     text-align: center;
     margin: 20px 0px;
-    border-bottom: 5px solid #c16a08;
+    border-bottom: 5px solid $honeyDark;
 }
 
 .main-container-subtitle {
@@ -34,7 +34,7 @@ main {
     display: flex;
     flex-direction: column;
     align-items: center;
-    border: 5px solid #c16a08;
+    border: 5px solid $honeyDark;
     border-radius: 10px;
     margin: 20px 0;
 }
@@ -45,13 +45,13 @@ main {
 
 .section-text {
     width: 90%;
-    margin-bottom: 10px;
+    margin: 10px 0;
 }
 
 .section-image {
     width: 90%;
     margin: 10px 0;
     border-radius: 10px;
-    border: 3px solid #c16a08;
+    border: 3px solid $honeyDark;
     max-height: 500px;
 }

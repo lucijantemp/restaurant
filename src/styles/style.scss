@@ -3,6 +3,7 @@ $honeyLight: #ffde73;
 $honeyDark: #c16a08;
 $black: #000000;
 
+/* GENERAL */
 * {
     padding: 0;
     margin: 0;
@@ -13,12 +14,13 @@ $black: #000000;
 main {
     background-image: url('../images/background.png');
     background-repeat: repeat-y;
-    min-height: 100vh;
+    min-height: 85vh;
 }
 
 button:hover {
     cursor: pointer;
 }
 
+/* IMPORTS */
 @import "header";
 @import "main";
