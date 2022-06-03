@@ -5,6 +5,9 @@ import Toast from '../images/toast.jpg'
 import Fruit from '../images/fruit.jpg'
 import Pancakes from '../images/pancakes.jpg'
 import Veggie from '../images/veggie.jpg'
+import Mama from '../images/mama.jpg'
+import Papa from '../images/papa.jpg'
+import Baby from '../images/baby.jpeg'
 
 
 export const load = (() => {
@@ -243,7 +246,75 @@ export const load = (() => {
         sectionContainerVeggie.appendChild(veggieImage)
     }
 
-    const showContact = () => {}
+    const showContact = () => {
+        const mainContainer = document.querySelector('.main-container')
+
+        /* title */
+        const mainContainerTitle = document.createElement('h1')
+        mainContainerTitle.classList.add('main-container-title')
+        mainContainerTitle.innerHTML = 'Contact us'
+        mainContainer.appendChild(mainContainerTitle)
+
+        /* mama box */
+        const sectionContainerMama = document.createElement('div')
+        sectionContainerMama.classList.add('main-container-section')
+        mainContainer.appendChild(sectionContainerMama)
+
+        const mamaTitle = document.createElement('h3')
+        mamaTitle.classList.add('section-title')
+        mamaTitle.innerHTML = 'Mama Bear'
+        sectionContainerMama.appendChild(mamaTitle)
+
+        const mamaText = document.createElement('p')
+        mamaText.classList.add('section-text')
+        mamaText.innerHTML = "Chef<br>555-555-5554<br>totallyRealEmail@notFake.com"
+        sectionContainerMama.appendChild(mamaText)
+
+        const mamaImage = document.createElement('img')
+        mamaImage.classList.add('section-image')
+        mamaImage.src = Mama
+        sectionContainerMama.appendChild(mamaImage)
+
+        /* papa box */
+        const sectionContainerPapa = document.createElement('div')
+        sectionContainerPapa.classList.add('main-container-section')
+        mainContainer.appendChild(sectionContainerPapa)
+
+        const papaTitle = document.createElement('h3')
+        papaTitle.classList.add('section-title')
+        papaTitle.innerHTML = 'Papa Bear'
+        sectionContainerPapa.appendChild(papaTitle)
+
+        const papaText = document.createElement('p')
+        papaText.classList.add('section-text')
+        papaText.innerHTML = "Manager<br>555-555-5555<br>perfectlyRealEmail@notFake.com"
+        sectionContainerPapa.appendChild(papaText)
+
+        const papaImage = document.createElement('img')
+        papaImage.classList.add('section-image')
+        papaImage.src = Papa
+        sectionContainerPapa.appendChild(papaImage)
+
+        /* baby box */
+        const sectionContainerBaby = document.createElement('div')
+        sectionContainerBaby.classList.add('main-container-section')
+        mainContainer.appendChild(sectionContainerBaby)
+
+        const babyTitle = document.createElement('h3')
+        babyTitle.classList.add('section-title')
+        babyTitle.innerHTML = 'Baby Bear'
+        sectionContainerBaby.appendChild(babyTitle)
+
+        const babyText = document.createElement('p')
+        babyText.classList.add('section-text')
+        babyText.innerHTML = "Waiter<br>555-555-5556<br>totallyRealEmail@notFake.com"
+        sectionContainerBaby.appendChild(babyText)
+
+        const babyImage = document.createElement('img')
+        babyImage.classList.add('section-image')
+        babyImage.src = Baby
+        sectionContainerBaby.appendChild(babyImage)
+    }
 
     const wipeContent = () => {
         const container = document.querySelector('.main-container')
@@ -252,7 +323,6 @@ export const load = (() => {
             container.removeChild(child)
             child = container.lastElementChild
         }
-        console.log('Removed content children')
     }
 
     return { 
